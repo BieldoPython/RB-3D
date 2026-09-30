@@ -115,6 +115,39 @@ var createLucideIcon = (iconName, iconNode) => {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var ArrowRight = createLucideIcon("arrow-right", [["path", {
+	d: "M5 12h14",
+	key: "1ays0h"
+}], ["path", {
+	d: "m12 5 7 7-7 7",
+	key: "xquz4c"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var CreditCard = createLucideIcon("credit-card", [["rect", {
+	width: "20",
+	height: "14",
+	x: "2",
+	y: "5",
+	rx: "2",
+	key: "ynyp8z"
+}], ["line", {
+	x1: "2",
+	x2: "22",
+	y1: "10",
+	y2: "10",
+	key: "1b3vmo"
+}]]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Facebook = createLucideIcon("facebook", [["path", {
 	d: "M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z",
 	key: "1jg4f8"
@@ -204,6 +237,70 @@ var MessageCircle = createLucideIcon("message-circle", [["path", {
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var RulerDimensionLine = createLucideIcon("ruler-dimension-line", [
+	["path", {
+		d: "M10 15v-3",
+		key: "1pjskw"
+	}],
+	["path", {
+		d: "M14 15v-3",
+		key: "1o1mqj"
+	}],
+	["path", {
+		d: "M18 15v-3",
+		key: "cws6he"
+	}],
+	["path", {
+		d: "M2 8V4",
+		key: "3jv1jz"
+	}],
+	["path", {
+		d: "M22 6H2",
+		key: "1iqbfk"
+	}],
+	["path", {
+		d: "M22 8V4",
+		key: "16f4ou"
+	}],
+	["path", {
+		d: "M6 15v-3",
+		key: "1ij1qe"
+	}],
+	["rect", {
+		x: "2",
+		y: "12",
+		width: "20",
+		height: "8",
+		rx: "2",
+		key: "1tqiko"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
+var Store = createLucideIcon("store", [
+	["path", {
+		d: "M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5",
+		key: "slp6dd"
+	}],
+	["path", {
+		d: "M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244",
+		key: "o0xfot"
+	}],
+	["path", {
+		d: "M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05",
+		key: "wn3emo"
+	}]
+]);
+/**
+* @license lucide-react v0.575.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var X = createLucideIcon("x", [["path", {
 	d: "M18 6 6 18",
 	key: "1bl5f8"
@@ -275,4 +372,4 @@ var ZoomOut = createLucideIcon("zoom-out", [
 	}]
 ]);
 //#endregion
-export { Maximize2 as a, Facebook as c, MessageCircle as i, ZoomIn as n, Mail as o, X as r, Instagram as s, ZoomOut as t };
+export { RulerDimensionLine as a, Mail as c, CreditCard as d, ArrowRight as f, Store as i, Instagram as l, ZoomIn as n, MessageCircle as o, X as r, Maximize2 as s, ZoomOut as t, Facebook as u };

@@ -1,4 +1,4 @@
-import { categories, formatPrice, type Product } from "@/data/products";
+import { formatPrice, getProductCategoryLabels, type Product } from "@/data/products";
 
 export function ProductCard({
   product,
@@ -7,22 +7,20 @@ export function ProductCard({
   product: Product;
   onSelect: (product: Product) => void;
 }) {
-  const category = categories.find((c) => c.id === product.category);
+  const categoryLabels = getProductCategoryLabels(product);
 
   return (
     <button
       type="button"
       onClick={() => onSelect(product)}
-      className="group surface-card relative overflow-hidden rounded-xl border border-border text-left transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:rounded-2xl"
+      className="group surface-card relative flex flex-col w-full p-0 overflow-hidden rounded-xl border border-border text-left transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:rounded-2xl"
     >
-      <div className="relative aspect-square overflow-hidden bg-secondary">
+      <div className="relative w-full aspect-square overflow-hidden">
         <img
           src={product.image}
           alt={product.name}
           loading="lazy"
-          width={1024}
-          height={1024}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-110"
         />
         {product.badge ? (
           <span className="absolute left-2 top-2 rounded-full bg-primary px-2 py-0.5 text-[9px] font-bold uppercase tracking-wider text-primary-foreground sm:left-3 sm:top-3 sm:px-3 sm:py-1 sm:text-[11px]">
@@ -31,15 +29,17 @@ export function ProductCard({
         ) : null}
       </div>
 
-      <div className="space-y-1.5 p-2.5 sm:space-y-2 sm:p-4 md:p-5">
-        <span className="text-[9px] font-semibold uppercase tracking-[0.14em] text-primary/80 sm:text-[11px] sm:tracking-[0.18em]">
-          {category?.label}
+      <div className="flex flex-1 flex-col gap-y-1.5 p-2.5 sm:gap-y-2 sm:p-4 md:p-5">
+        <span className="line-clamp-2 min-h-[2.5em] text-[9px] font-semibold uppercase tracking-[0.14em] text-primary/80 sm:text-[11px] sm:tracking-[0.18em]">
+          {categoryLabels}
         </span>
-        <h3 className="font-display text-sm leading-tight text-foreground sm:text-base md:text-lg">
+        <h3 className="line-clamp-2 min-h-[2.5em] font-display text-sm leading-tight text-foreground sm:text-base md:text-lg">
           {product.name}
         </h3>
-        <p className="line-clamp-2 text-xs text-muted-foreground sm:text-sm">{product.tagline}</p>
-        <div className="flex items-center justify-between pt-1 sm:pt-2">
+        <p className="line-clamp-2 min-h-[2.8em] text-xs text-muted-foreground sm:text-sm">
+          {product.tagline}
+        </p>
+        <div className="mt-auto flex items-center justify-between pt-1 sm:pt-2">
           <span className="font-display text-base text-primary sm:text-lg md:text-xl">
             {formatPrice(product.price)}
           </span>

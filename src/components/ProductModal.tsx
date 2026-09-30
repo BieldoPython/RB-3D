@@ -16,19 +16,6 @@ export function ProductModal({
 
   const viewCount = product?.views.length ?? 0;
 
-  const getViewTransformClass = (index: number) => {
-    switch (index) {
-      case 1:
-        return "-scale-x-100"; // horizontal flip
-      case 2:
-        return "-scale-y-100 rotate-180"; // vertical flip / rotate
-      case 3:
-        return "-scale-x-100 rotate-6 scale-110"; // zoomed and rotated
-      default:
-        return ""; // normal
-    }
-  };
-
   useEffect(() => {
     setColorIndex(0);
     setViewIndex(0);
@@ -50,8 +37,28 @@ export function ProductModal({
   if (!product) return null;
 
   const category = categories.find((c) => c.id === product.category);
-  const current = getProductImage(product, viewIndex, colorIndex);
+  // Sempre mostra a cor original (índice 0) nas fotos, independente da cor selecionada
+  const current = getProductImage(product, viewIndex);
   const hasMultipleViews = viewCount > 1;
+
+  const colorMap: Record<string, string> = {
+    "azul": "#224bd3",
+    "azul claro": "#60A5FA",
+    "amarelo": "#FFFF00",
+    "preto": "#111827",
+    "rosa": "#f42783",
+    "branco": "#FFFFFF",
+    "grafite": "#4B5563",
+    "azul metálico": "#3B82F6",
+    "verde": "#00FF00",
+    "vermelho": "#DC2626",
+    "tons claros": "#F3F4F6",
+    "claro": "#F3F4F6",
+    "cinza primer": "#9CA3AF",
+    "cinza": "#9CA3AF",
+    "off-white": "#F9FAF1",
+    "original": "#E5E7EB",
+  };
 
   const goView = (dir: 1 | -1) =>
     setViewIndex((i) => (i + dir + viewCount) % viewCount);
@@ -77,7 +84,7 @@ export function ProductModal({
             ✕
           </button>
           <div className="grid gap-0 md:grid-cols-2">
-            <div>
+            <div className="min-w-0 overflow-hidden">
               <div className="group relative aspect-square overflow-hidden bg-secondary">
                 <img
                   key={`${viewIndex}-${colorIndex}`}
@@ -86,7 +93,7 @@ export function ProductModal({
                   width={1024}
                   height={1024}
                   onClick={() => setLightbox(true)}
-                  className={`h-full w-full cursor-zoom-in object-cover transition-all duration-300 ${getViewTransformClass(viewIndex)}`}
+                  className="h-full w-full cursor-zoom-in object-cover transition-all duration-300"
                 />
 
                 <button
@@ -135,12 +142,12 @@ export function ProductModal({
                       }`}
                     >
                       <img
-                        src={view[colorIndex] ?? view[0]}
+                        src={view}
                         alt=""
                         loading="lazy"
                         width={1024}
                         height={1024}
-                        className={`h-full w-full object-cover transition-all ${getViewTransformClass(i)}`}
+                        className="h-full w-full object-cover"
                       />
                     </button>
                   ))}
@@ -158,26 +165,75 @@ export function ProductModal({
                 </div>
               </div>
 
-              <p className="order-3 md:order-2 text-sm leading-relaxed text-muted-foreground">{product.description}</p>
+              <div className="order-3 md:order-2 space-y-3">
+                {product.description.split(/\\n|\n/).map((paragraph, idx) => {
+                  const trimmed = paragraph.trim();
+                  if (!trimmed) return null;
+                  return (
+                    <p key={idx} className="text-sm leading-relaxed text-muted-foreground">
+                      {trimmed}
+                    </p>
+                  );
+                })}
+              </div>
 
               <div className="order-1 md:order-3">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-foreground">
-                  Cor do filamento
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {product.colors.map((c, i) => (
-                    <button
-                      key={c.id}
-                      onClick={() => setColorIndex(i)}
-                      className={`rounded-full border px-3 py-1.5 text-xs transition-colors ${
-                        colorIndex === i
-                          ? "border-primary bg-primary/15 text-primary"
-                          : "border-border text-muted-foreground hover:border-primary/50"
-                      }`}
-                    >
-                      {c.label}
-                    </button>
-                  ))}
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-foreground">
+                    Cores disponíveis
+                  </span>
+                  <span className="text-xs font-bold text-primary">
+                    {product.colors[colorIndex]?.label}
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  {product.colors.map((c, i) => {
+                    const labelLower = c.label.toLowerCase();
+                    const isMultiColor =
+                      labelLower.includes("várias") ||
+                      labelLower.includes("multi") ||
+                      labelLower.includes("mesclado") ||
+                      labelLower.includes("colorido") ||
+                      labelLower.includes("predefinidas");
+
+                    const isThreeColors =
+                      labelLower.includes("preto") &&
+                      labelLower.includes("branco") &&
+                      labelLower.includes("vermelho");
+
+                    let style = {};
+                    if (isThreeColors) {
+                      style = {
+                        background:
+                          "linear-gradient( #111827 33%, #ffffff 33%, #ffffff 66%, #dc2626 66%)",
+                      };
+                    } else if (isMultiColor) {
+                      style = {
+                        background:
+                          "repeating-linear-gradient( #ef4444, #ef4444 4px, #3b82f6 4px, #3b82f6 8px, #eab308 8px, #eab308 12px, #10b981 12px, #10b981 16px)",
+                      };
+                    } else {
+                      style = { backgroundColor: colorMap[labelLower] || "#ccc" };
+                    }
+
+                    return (
+                      <button
+                        key={c.id}
+                        onClick={() => setColorIndex(i)}
+                        title={c.label}
+                        className={`group flex h-10 w-10 items-center justify-center rounded-full border-2 transition-all ${
+                          colorIndex === i
+                            ? "border-primary scale-110 shadow-md"
+                            : "border-transparent hover:border-border"
+                        }`}
+                      >
+                        <span
+                          className="h-7 w-7 rounded-full shadow-inner border border-border/60 transition-transform group-hover:scale-110"
+                          style={style}
+                        />
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -196,7 +252,7 @@ export function ProductModal({
                 </div>
                 <div>
                   <dt className="text-xs uppercase tracking-wider text-muted-foreground">Camada</dt>
-                  <dd className="text-foreground">0,12 mm</dd>
+                  <dd className="text-foreground">0,4 mm</dd>
                 </div>
               </dl>
 

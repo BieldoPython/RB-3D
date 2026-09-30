@@ -1,11 +1,11 @@
 {
-  "compatibility_date": "2026-07-29",
+  "compatibility_date": "2026-09-26",
   "main": "index.mjs",
   "assets": {
     "binding": "ASSETS",
     "directory": "../public"
   },
-  "name": "tanstack-start-ts",
+  "name": "bieldopython-site-novo",
   "compatibility_flags": [
     "nodejs_compat"
   ],

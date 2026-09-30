@@ -3,7 +3,7 @@ import { Facebook, Instagram, Mail, MessageCircle } from "lucide-react";
 const contacts = [
   {
     label: "Instagram",
-    href: "https://instagram.com/rb3d",
+    href: "https://instagram.com/reb_impressoes_3d/",
     icon: Instagram,
     iconClass: "text-[#E4405F]",
     labelClass: "group-hover:text-[#E4405F]",
@@ -17,14 +17,14 @@ const contacts = [
   },
   {
     label: "Facebook",
-    href: "https://facebook.com/rb3d",
+    href: "https://www.facebook.com/marketplace/item/1051561104090443/",
     icon: Facebook,
     iconClass: "text-[#1877F2]",
     labelClass: "group-hover:text-[#1877F2]",
   },
   {
     label: "E-mail",
-    href: "mailto:contato@rb3d.com.br",
+    href: "mailto:rbimpressoes92@gmail.com ",
     icon: Mail,
     iconClass: "text-[#EA4335]",
     labelClass: "group-hover:text-[#EA4335]",
