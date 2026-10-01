@@ -56,6 +56,11 @@ import pack7img1 from "@/assets/pack7/img1.jpeg"
 import pack7img2 from "@/assets/pack7/img2.jpg"
 import pack7img3 from "@/assets/pack7/img3.jpg"
 
+//pack8
+import pack8img1 from "@/assets/pack8/img1.jpeg"
+import pack8img2 from "@/assets/pack8/img2.jpeg"
+import pack8img3 from "@/assets/pack8/img3.jpeg"
+
 
 export type CategoryId = "chaveiros" | "suportes" | "decor" | "futebol" | "comercio"; 
 
@@ -115,7 +120,7 @@ export const products: Product[] = [
     id: "sup-caranguejo",
     name: "Suporte Caranguejo",
     category: "suportes",
-    price: 19.99,
+    price: 20.00,
     image: pack1img1,
     colors: [
       { id: "vermelho", label: "Vermelho" },
@@ -127,10 +132,10 @@ export const products: Product[] = [
       { id: "branco", label: "Branco" },
     ],
     views: [pack1img1,pack1img2,pack1img3,pack1img4,pack1img5,pack1img6,pack1img7,pack1img8],
-    tagline: "Suporte de caranguejo 🦀",
+    tagline: "Apoie seu celular com um toque divertido em formato de caranguejo.",
     description:
-      "Deixe sua mesa mais organizada e divertida!",
-    material: "PLA+ premium",
+      "Suporte funcional e divertido para manter o celular em vista, com estilo e praticidade em qualquer mesa ou bancada.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
     badge: "Mais vendido", //tag do produto 
@@ -141,7 +146,7 @@ export const products: Product[] = [
     id: "sup-gato",
     name: "Suporte Gato",
     category: "suportes",
-    price: 19.99,
+    price: 20.00,
     image: pack2img1,
     colors: [
       { id: "vermelho", label: "Vermelho" },
@@ -153,10 +158,10 @@ export const products: Product[] = [
       { id: "branco", label: "Branco" },
     ],
     views: [pack2img1,pack2img2,pack2img3,pack2img4],
-    tagline: "Suporte de gato",
+    tagline: "Um apoio de celular simpático para deixar sua mesa mais organizada.",
     description:
-      "Deixe sua mesa mais organizada e divertida!",
-    material: "PLA+ premium",
+      "Acompanha seu dia a dia com um design charmoso, oferecendo suporte firme e um toque de personalidade para o ambiente.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
     badge: "Mais vendido",
@@ -167,8 +172,8 @@ export const products: Product[] = [
     id: "sup-headset",
     name: "Suporte para Headset",
     category: "suportes",
-    price: 11.99,
-    image: pack3img1,
+    price: 10.00,
+    image: pack3img3,
     colors: [
       { id: "vermelho", label: "Vermelho" },
       { id: "amarelo", label: "Amarelo" },
@@ -179,10 +184,10 @@ export const products: Product[] = [
       { id: "branco", label: "Branco" },
     ],
     views: [pack3img1,pack3img2,pack3img3,pack3img4],
-    tagline: "Suporte de gato",
+    tagline: "Mantenha seu headset apoiado e sempre à mão.",
     description:
-      "Deixe sua mesa mais organizada e divertida!",
-    material: "PLA+ premium",
+      "Organiza seu headset com praticidade e mantém o espaço mais limpo, funcional e com visual moderno.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
   },
@@ -192,7 +197,7 @@ export const products: Product[] = [
     id: "sup-chaveiro",
     name: "Chaveiro suporte de celular",
     category: ["suportes", "chaveiros", "futebol"],
-    price: 11.99,
+    price: 12.00,
     image: pack4img1,
     colors: [
       { id: "vermelho", label: "Vermelho" },
@@ -204,10 +209,10 @@ export const products: Product[] = [
       { id: "branco", label: "Branco" },
     ],
     views: [pack4img1,pack4img2,pack4img3,pack4img4],
-    tagline: "Suporte de gato",
+    tagline: "Um chaveiro prático que também serve de suporte para celular.",
     description:
-      "Deixe sua mesa mais organizada e divertida!",
-    material: "PLA+ premium",
+      "Uma peça versátil que combina suporte para celular com o charme de um chaveiro útil para uso diário.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
   },
@@ -217,16 +222,16 @@ export const products: Product[] = [
     id: "chav-flamengo",
     name: "Chaveiro Flamengo",
     category: ["chaveiros", "futebol"],
-    price: 9.99,
+    price: 10.00,
     image: pack5img1,
     colors: [
       { id: "multicores", label: "preto, branco,vermelho" },
     ],
     views: [pack5img1,pack5img2],
-    tagline: "Suporte de gato",
+    tagline: "Leve as cores do Flamengo com você em um chaveiro compacto.",
     description:
-      "Deixe sua mesa mais organizada e divertida! \n teste",
-    material: "PLA+ premium",
+      "Chaveiro esportivo com visual marcante, perfeito para mostrar seu time com identidade e estilo no dia a dia.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
   },
@@ -236,16 +241,16 @@ export const products: Product[] = [
     id: "chav-corinthians",
     name: "Chaveiro Corinthians",
     category: ["chaveiros", "futebol", "comercio"],
-    price: 9.99,
+    price: 10.00,
     image: pack6img1,
     colors: [
       { id: "multicores", label: "preto, branco, vermelho" },
     ],
     views: [pack6img1,pack6img2],
-    tagline: "Suporte de gato",
+    tagline: "Um chaveiro do Corinthians para levar seu time com você.",
     description:
-      "Deixe sua mesa mais organizada e divertida!",
-    material: "PLA+ premium",
+      "Peça prática e estilizada para torcedores que querem levar a marca do Corinthians com leveza e personalidade.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
   },
@@ -254,7 +259,7 @@ export const products: Product[] = [
     id: "sup-livro-gato",
     name: "Suporte de livro de gato",
     category: ["suportes","decor"],
-    price: 9.99,
+    price: 10.00,
     image: pack7img1,
     colors: [
       { id: "vermelho", label: "Vermelho" },
@@ -267,74 +272,39 @@ export const products: Product[] = [
       { id: "rosa", label: "Rosa"},
     ],
     views: [pack7img1,pack7img2,pack7img3],
-    tagline: "Suporte de gato",
+    tagline: "Organize seus livros com um suporte decorativo em formato de gato.",
     description:
-      "Deixe sua mesa mais organizada e divertida!",
-    material: "PLA+ premium",
+      "Decoração funcional para prateleiras e mesa, com design de gato que traz charme, organização e um toque lúdico ao ambiente.",
+    material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
   },
   {
-    id: "sup-maquininha",
-    name: "Suporte para Maquininha de Cartão",
-    category: ["suportes", "comercio"],
-    price: 34.90,
-    image: pack3img3,
+    id: "sup-porta-cartao-odontologico",
+    name: "Porta Cartão Odontológico",
+    category: ["comercio", "decor", "suportes"],
+    price: 20.00,
+    image: pack8img1,
     colors: [
-      { id: "preto", label: "Preto" },
-      { id: "cinza", label: "Cinza" },
-      { id: "branco", label: "Branco" },
+    { id: "vermelho", label: "Vermelho" },
+      { id: "amarelo", label: "Amarelo" },
+      { id: "verde", label: "Verde" },
       { id: "azul", label: "Azul" },
+      { id: "cinza", label: "Cinza" },
+      { id: "preto", label: "Preto" },
+      { id: "branco", label: "Branco" },
+      { id: "rosa", label: "Rosa"},
+      { id: "laranja", label: "Laranja"},
     ],
-    views: [pack3img3, pack3img4],
+    views: [pack8img1, pack8img2, pack8img3],
     tagline: "Organização e praticidade no caixa",
     description:
-      "Suporte universal robusto e ergonômico para maquininhas de cartão de crédito e débito. Evita queda de aparelhos, esconde cabos de alimentação e melhora a postura na hora de operar o terminal de vendas.",
-    material: "PLA+ premium reforçado",
-    size: "12 × 10 × 8 cm",
-    time: "2 a 4 dias úteis",
+      "Organize e destaque seus cartões de visita com este porta-cartões criativo e diferenciado, produzido em impressão 3D, é ideal para consultórios odontológicos, recepções e balcões de atendimento.",
+    material: "PLA",
+    size: "13 × 5 × 5,5 cm",
+    time: "1 a 2 dias úteis",
     badge: "Novo",
-  },
-  {
-    id: "display-pix",
-    name: "Display de Mesa QR Code PIX",
-    category: ["comercio", "decor"],
-    price: 24.90,
-    image: pack1img7,
-    colors: [
-      { id: "preto", label: "Preto" },
-      { id: "branco", label: "Branco" },
-      { id: "azul", label: "Azul" },
-    ],
-    views: [pack1img7, pack1img8],
-    tagline: "Seu QR Code sempre visível",
-    description:
-      "Display de mesa moderno para expor seu QR Code de PIX, redes sociais ou menu digital. Facilite o pagamento via PIX e torne seu balcão muito mais elegante e tecnológico.",
-    material: "PLA+ premium de alta resolução",
-    size: "15 × 10 × 5 cm",
-    time: "2 a 3 dias úteis",
-    badge: "Destaque",
-  },
-  {
-    id: "porta-cartao",
-    name: "Porta-Cartões de Visita Executivo",
-    category: ["comercio", "decor"],
-    price: 19.90,
-    image: pack2img3,
-    colors: [
-      { id: "preto", label: "Preto" },
-      { id: "cinza", label: "Cinza" },
-      { id: "ouro", label: "Ouro/Dourado" },
-      { id: "branco", label: "Branco" },
-    ],
-    views: [pack2img3, pack2img4],
-    tagline: "Exponha seus contatos com elegância",
-    description:
-      "Porta-cartões de visita com design geométrico moderno e minimalista. Ideal para balcões de recepção, consultórios, lojas ou escritórios que querem passar uma imagem de sofisticação.",
-    material: "PLA+ premium texturizado",
-    size: "9.5 × 6 × 5 cm",
-    time: "2 a 3 dias úteis",
-  },
+  }
 
 ];
 

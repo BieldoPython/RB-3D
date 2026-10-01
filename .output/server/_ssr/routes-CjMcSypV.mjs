@@ -1,7 +1,7 @@
 import { n as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as RulerDimensionLine, c as Mail, d as CreditCard, f as ArrowRight, i as Store, l as Instagram, n as ZoomIn, o as MessageCircle, r as X, s as Maximize2, t as ZoomOut, u as Facebook } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DwIMI_gv.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CjMcSypV.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var banner1_default = "/assets/banner1-Do5YobwQ.png";
@@ -27,33 +27,36 @@ function HeroCarousel({ images }) {
 		}, src)), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute inset-0 bg-gradient-to-b from-background/15 via-background/55 to-background" })]
 	});
 }
-var img1_default$6 = "/assets/img1-B6Xrndbp.jpg";
-var img2_default$6 = "/assets/img2-CHE80fQq.jpg";
-var img3_default$4 = "/assets/img3-B6_XpS6H.jpg";
+var img1_default$7 = "/assets/img1-B6Xrndbp.jpg";
+var img2_default$7 = "/assets/img2-CHE80fQq.jpg";
+var img3_default$5 = "/assets/img3-B6_XpS6H.jpg";
 var img4_default$3 = "/assets/img4-CJLpRMks.jpg";
 var img5_default = "/assets/img5-BWg_GFkp.jpg";
 var img6_default = "/assets/img6-DNVwx4zA.jpg";
 var img7_default = "/assets/img7-BcLJKgXR.jpg";
 var img8_default = "/assets/img8-BKhuqFtn.jpg";
-var img1_default$5 = "/assets/img1-BzCNZEvJ.jpg";
-var img2_default$5 = "/assets/img2-CG2uKKiK.jpg";
-var img3_default$3 = "/assets/img3-CGs2ok2f.jpg";
+var img1_default$6 = "/assets/img1-BzCNZEvJ.jpg";
+var img2_default$6 = "/assets/img2-CG2uKKiK.jpg";
+var img3_default$4 = "/assets/img3-CGs2ok2f.jpg";
 var img4_default$2 = "/assets/img4-BhlX907G.jpg";
-var img1_default$4 = "/assets/img1-DCcPcOTs.jpeg";
-var img2_default$4 = "/assets/img2-Lvh_lVPz.jpeg";
-var img3_default$2 = "/assets/img3-DfCEEpst.jpg";
+var img1_default$5 = "/assets/img1-DCcPcOTs.jpeg";
+var img2_default$5 = "/assets/img2-Lvh_lVPz.jpeg";
+var img3_default$3 = "/assets/img3-DfCEEpst.jpg";
 var img4_default$1 = "/assets/img4-D8lAnbcr.jpg";
-var img1_default$3 = "/assets/img1-aCEkJkwx.jpg";
-var img2_default$3 = "/assets/img2-zAcXWbG9.jpg";
-var img3_default$1 = "/assets/img3-CvBOxfFG.jpg";
+var img1_default$4 = "/assets/img1-aCEkJkwx.jpg";
+var img2_default$4 = "/assets/img2-zAcXWbG9.jpg";
+var img3_default$2 = "/assets/img3-CvBOxfFG.jpg";
 var img4_default = "/assets/img4-D60wL8ir.jpg";
-var img1_default$2 = "/assets/img1-D-LT_OGF.jpg";
-var img2_default$2 = "/assets/img2-BtHIZP3K.jpg";
-var img1_default$1 = "/assets/img1-CfYAN1Rd.jpg";
-var img2_default$1 = "/assets/img2-D_Ge-e53.jpg";
-var img1_default = "/assets/img1-CFjon9Eo.jpeg";
-var img2_default = "/assets/img2-C50Btdzg.jpg";
-var img3_default = "/assets/img3-CIesKr0Y.jpg";
+var img1_default$3 = "/assets/img1-D-LT_OGF.jpg";
+var img2_default$3 = "/assets/img2-BtHIZP3K.jpg";
+var img1_default$2 = "/assets/img1-CfYAN1Rd.jpg";
+var img2_default$2 = "/assets/img2-D_Ge-e53.jpg";
+var img1_default$1 = "/assets/img1-CFjon9Eo.jpeg";
+var img2_default$1 = "/assets/img2-C50Btdzg.jpg";
+var img3_default$1 = "/assets/img3-CIesKr0Y.jpg";
+var img1_default = "/assets/img1-Cf6Bsu4f.jpeg";
+var img2_default = "/assets/img2-Bei_vTmU.jpeg";
+var img3_default = "/assets/img3-C2e17LUY.jpeg";
 var categories = [
 	{
 		id: "chaveiros",
@@ -86,6 +89,59 @@ var products = [
 	{
 		id: "sup-caranguejo",
 		name: "Suporte Caranguejo",
+		category: "suportes",
+		price: 19.99,
+		image: img1_default$7,
+		colors: [
+			{
+				id: "vermelho",
+				label: "Vermelho"
+			},
+			{
+				id: "amarelo",
+				label: "Amarelo"
+			},
+			{
+				id: "verde",
+				label: "Verde"
+			},
+			{
+				id: "azul",
+				label: "azul"
+			},
+			{
+				id: "cinza",
+				label: "Cinza"
+			},
+			{
+				id: "preto",
+				label: "Preto"
+			},
+			{
+				id: "branco",
+				label: "Branco"
+			}
+		],
+		views: [
+			img1_default$7,
+			img2_default$7,
+			img3_default$5,
+			img4_default$3,
+			img5_default,
+			img6_default,
+			img7_default,
+			img8_default
+		],
+		tagline: "Apoie seu celular com um toque divertido em formato de caranguejo.",
+		description: "Suporte funcional e divertido para manter o celular em vista, com estilo e praticidade em qualquer mesa ou bancada.",
+		material: "PLA",
+		size: "10 × 8 × 7 cm",
+		time: "2 a 3 dias úteis",
+		badge: "Mais vendido"
+	},
+	{
+		id: "sup-gato",
+		name: "Suporte Gato",
 		category: "suportes",
 		price: 19.99,
 		image: img1_default$6,
@@ -123,24 +179,20 @@ var products = [
 			img1_default$6,
 			img2_default$6,
 			img3_default$4,
-			img4_default$3,
-			img5_default,
-			img6_default,
-			img7_default,
-			img8_default
+			img4_default$2
 		],
-		tagline: "Suporte de caranguejo 🦀",
-		description: "Deixe sua mesa mais organizada e divertida!",
-		material: "PLA+ premium",
+		tagline: "Um apoio de celular simpático para deixar sua mesa mais organizada.",
+		description: "Acompanha seu dia a dia com um design charmoso, oferecendo suporte firme e um toque de personalidade para o ambiente.",
+		material: "PLA",
 		size: "10 × 8 × 7 cm",
 		time: "2 a 3 dias úteis",
 		badge: "Mais vendido"
 	},
 	{
-		id: "sup-gato",
-		name: "Suporte Gato",
+		id: "sup-headset",
+		name: "Suporte para Headset",
 		category: "suportes",
-		price: 19.99,
+		price: 11.99,
 		image: img1_default$5,
 		colors: [
 			{
@@ -176,19 +228,22 @@ var products = [
 			img1_default$5,
 			img2_default$5,
 			img3_default$3,
-			img4_default$2
+			img4_default$1
 		],
-		tagline: "Suporte de gato",
-		description: "Deixe sua mesa mais organizada e divertida!",
-		material: "PLA+ premium",
+		tagline: "Mantenha seu headset apoiado e sempre à mão.",
+		description: "Organiza seu headset com praticidade e mantém o espaço mais limpo, funcional e com visual moderno.",
+		material: "PLA",
 		size: "10 × 8 × 7 cm",
-		time: "2 a 3 dias úteis",
-		badge: "Mais vendido"
+		time: "2 a 3 dias úteis"
 	},
 	{
-		id: "sup-headset",
-		name: "Suporte para Headset",
-		category: "suportes",
+		id: "sup-chaveiro",
+		name: "Chaveiro suporte de celular",
+		category: [
+			"suportes",
+			"chaveiros",
+			"futebol"
+		],
 		price: 11.99,
 		image: img1_default$4,
 		colors: [
@@ -225,63 +280,11 @@ var products = [
 			img1_default$4,
 			img2_default$4,
 			img3_default$2,
-			img4_default$1
-		],
-		tagline: "Suporte de gato",
-		description: "Deixe sua mesa mais organizada e divertida!",
-		material: "PLA+ premium",
-		size: "10 × 8 × 7 cm",
-		time: "2 a 3 dias úteis"
-	},
-	{
-		id: "sup-chaveiro",
-		name: "Chaveiro suporte de celular",
-		category: [
-			"suportes",
-			"chaveiros",
-			"futebol"
-		],
-		price: 11.99,
-		image: img1_default$3,
-		colors: [
-			{
-				id: "vermelho",
-				label: "Vermelho"
-			},
-			{
-				id: "amarelo",
-				label: "Amarelo"
-			},
-			{
-				id: "verde",
-				label: "Verde"
-			},
-			{
-				id: "azul",
-				label: "azul"
-			},
-			{
-				id: "cinza",
-				label: "Cinza"
-			},
-			{
-				id: "preto",
-				label: "Preto"
-			},
-			{
-				id: "branco",
-				label: "Branco"
-			}
-		],
-		views: [
-			img1_default$3,
-			img2_default$3,
-			img3_default$1,
 			img4_default
 		],
-		tagline: "Suporte de gato",
-		description: "Deixe sua mesa mais organizada e divertida!",
-		material: "PLA+ premium",
+		tagline: "Um chaveiro prático que também serve de suporte para celular.",
+		description: "Uma peça versátil que combina suporte para celular com o charme de um chaveiro útil para uso diário.",
+		material: "PLA",
 		size: "10 × 8 × 7 cm",
 		time: "2 a 3 dias úteis"
 	},
@@ -290,15 +293,15 @@ var products = [
 		name: "Chaveiro Flamengo",
 		category: ["chaveiros", "futebol"],
 		price: 9.99,
-		image: img1_default$2,
+		image: img1_default$3,
 		colors: [{
 			id: "multicores",
 			label: "preto, branco,vermelho"
 		}],
-		views: [img1_default$2, img2_default$2],
-		tagline: "Suporte de gato",
-		description: "Deixe sua mesa mais organizada e divertida! \n teste",
-		material: "PLA+ premium",
+		views: [img1_default$3, img2_default$3],
+		tagline: "Leve as cores do Flamengo com você em um chaveiro compacto.",
+		description: "Chaveiro esportivo com visual marcante, perfeito para mostrar seu time com identidade e estilo no dia a dia.",
+		material: "PLA",
 		size: "10 × 8 × 7 cm",
 		time: "2 a 3 dias úteis"
 	},
@@ -311,15 +314,15 @@ var products = [
 			"comercio"
 		],
 		price: 9.99,
-		image: img1_default$1,
+		image: img1_default$2,
 		colors: [{
 			id: "multicores",
 			label: "preto, branco, vermelho"
 		}],
-		views: [img1_default$1, img2_default$1],
-		tagline: "Suporte de gato",
-		description: "Deixe sua mesa mais organizada e divertida!",
-		material: "PLA+ premium",
+		views: [img1_default$2, img2_default$2],
+		tagline: "Um chaveiro do Corinthians para levar seu time com você.",
+		description: "Peça prática e estilizada para torcedores que querem levar a marca do Corinthians com leveza e personalidade.",
+		material: "PLA",
 		size: "10 × 8 × 7 cm",
 		time: "2 a 3 dias úteis"
 	},
@@ -328,7 +331,7 @@ var products = [
 		name: "Suporte de livro de gato",
 		category: ["suportes", "decor"],
 		price: 9.99,
-		image: img1_default,
+		image: img1_default$1,
 		colors: [
 			{
 				id: "vermelho",
@@ -364,106 +367,75 @@ var products = [
 			}
 		],
 		views: [
-			img1_default,
-			img2_default,
-			img3_default
+			img1_default$1,
+			img2_default$1,
+			img3_default$1
 		],
-		tagline: "Suporte de gato",
-		description: "Deixe sua mesa mais organizada e divertida!",
-		material: "PLA+ premium",
+		tagline: "Organize seus livros com um suporte decorativo em formato de gato.",
+		description: "Decoração funcional para prateleiras e mesa, com design de gato que traz charme, organização e um toque lúdico ao ambiente.",
+		material: "PLA",
 		size: "10 × 8 × 7 cm",
 		time: "2 a 3 dias úteis"
 	},
 	{
-		id: "sup-maquininha",
-		name: "Suporte para Maquininha de Cartão",
-		category: ["suportes", "comercio"],
+		id: "sup-porta-cartao-odontologico",
+		name: "Porta Cartão Odontológico",
+		category: [
+			"comercio",
+			"decor",
+			"suportes"
+		],
 		price: 34.9,
-		image: img3_default$2,
+		image: img1_default,
 		colors: [
 			{
-				id: "preto",
-				label: "Preto"
+				id: "vermelho",
+				label: "Vermelho"
+			},
+			{
+				id: "amarelo",
+				label: "Amarelo"
+			},
+			{
+				id: "verde",
+				label: "Verde"
+			},
+			{
+				id: "azul",
+				label: "Azul"
 			},
 			{
 				id: "cinza",
 				label: "Cinza"
 			},
 			{
+				id: "preto",
+				label: "Preto"
+			},
+			{
 				id: "branco",
 				label: "Branco"
 			},
 			{
-				id: "azul",
-				label: "Azul"
+				id: "rosa",
+				label: "Rosa"
+			},
+			{
+				id: "laranja",
+				label: "Laranja"
 			}
 		],
-		views: [img3_default$2, img4_default$1],
+		views: [
+			img1_default,
+			img2_default,
+			img3_default
+		],
 		tagline: "Organização e praticidade no caixa",
-		description: "Suporte universal robusto e ergonômico para maquininhas de cartão de crédito e débito. Evita queda de aparelhos, esconde cabos de alimentação e melhora a postura na hora de operar o terminal de vendas.",
-		material: "PLA+ premium reforçado",
-		size: "12 × 10 × 8 cm",
-		time: "2 a 4 dias úteis",
+		description: "Organize e destaque seus cartões de visita com este porta-cartões criativo e diferenciado, produzido em impressão 3D, é ideal para consultórios odontológicos, recepções e balcões de atendimento.",
+		material: "PLA",
+		size: "13 × 5 × 5,5 cm",
+		time: "1 a 2 dias úteis",
 		badge: "Novo"
-	},
-	{
-		id: "display-pix",
-		name: "Display de Mesa QR Code PIX",
-		category: ["comercio", "decor"],
-		price: 24.9,
-		image: img7_default,
-		colors: [
-			{
-				id: "preto",
-				label: "Preto"
-			},
-			{
-				id: "branco",
-				label: "Branco"
-			},
-			{
-				id: "azul",
-				label: "Azul"
-			}
-		],
-		views: [img7_default, img8_default],
-		tagline: "Seu QR Code sempre visível",
-		description: "Display de mesa moderno para expor seu QR Code de PIX, redes sociais ou menu digital. Facilite o pagamento via PIX e torne seu balcão muito mais elegante e tecnológico.",
-		material: "PLA+ premium de alta resolução",
-		size: "15 × 10 × 5 cm",
-		time: "2 a 3 dias úteis",
-		badge: "Destaque"
-	},
-	{
-		id: "porta-cartao",
-		name: "Porta-Cartões de Visita Executivo",
-		category: ["comercio", "decor"],
-		price: 19.9,
-		image: img3_default$3,
-		colors: [
-			{
-				id: "preto",
-				label: "Preto"
-			},
-			{
-				id: "cinza",
-				label: "Cinza"
-			},
-			{
-				id: "ouro",
-				label: "Ouro/Dourado"
-			},
-			{
-				id: "branco",
-				label: "Branco"
-			}
-		],
-		views: [img3_default$3, img4_default$2],
-		tagline: "Exponha seus contatos com elegância",
-		description: "Porta-cartões de visita com design geométrico moderno e minimalista. Ideal para balcões de recepção, consultórios, lojas ou escritórios que querem passar uma imagem de sofisticação.",
-		material: "PLA+ premium texturizado",
-		size: "9.5 × 6 × 5 cm",
-		time: "2 a 3 dias úteis"
 	}
 ];
 var formatPrice = (value) => value.toLocaleString("pt-BR", {
@@ -690,6 +662,7 @@ function ProductModal({ product, onClose }) {
 		"tons claros": "#F3F4F6",
 		"claro": "#F3F4F6",
 		"cinza primer": "#9CA3AF",
+		"laranja": "#F97316",
 		"cinza": "#9CA3AF",
 		"off-white": "#F9FAF1",
 		"original": "#E5E7EB"
@@ -891,7 +864,7 @@ var contacts = [
 	},
 	{
 		label: "WhatsApp",
-		href: "https://wa.me/5500000000000",
+		href: "https://wa.me/5577991701454",
 		icon: MessageCircle,
 		iconClass: "text-[#25D366]",
 		labelClass: "group-hover:text-[#25D366]"

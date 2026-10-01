@@ -10,7 +10,7 @@ const contacts = [
   },
   {
     label: "WhatsApp",
-    href: "https://wa.me/5500000000000",
+    href: "https://wa.me/5577991701454",
     icon: MessageCircle,
     iconClass: "text-[#25D366]",
     labelClass: "group-hover:text-[#25D366]",

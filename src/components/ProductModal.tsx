@@ -55,6 +55,7 @@ export function ProductModal({
     "tons claros": "#F3F4F6",
     "claro": "#F3F4F6",
     "cinza primer": "#9CA3AF",
+    "laranja": "#F97316",
     "cinza": "#9CA3AF",
     "off-white": "#F9FAF1",
     "original": "#E5E7EB",

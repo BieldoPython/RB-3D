@@ -146,17 +146,17 @@ function Index() {
                 Chaveiros personalizados, suportes que organizam seu setup, bonecos articulados e
                 decoração — tudo impresso camada por camada, com acabamento caprichado.
               </p>
-              <div className="grid gap-3 sm:flex sm:flex-wrap sm:justify-center">
+              <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                 <a
                   href="#catalogo"
-                  className="rounded-full bg-primary px-6 py-3.5 text-center text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+                  className="w-[78%] max-w-[220px] rounded-full bg-primary px-4 py-3.5 text-center text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 sm:w-auto sm:px-6 sm:py-3.5 sm:text-sm"
                   style={{ boxShadow: "var(--shadow-glow)" }}
                 >
                   Explorar catálogo
                 </a>
                 <a
                   href="#como-funciona"
-                  className="rounded-full border border-border bg-background/80 px-6 py-3.5 text-center text-sm font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-primary hover:text-primary"
+                  className="w-[78%] max-w-[220px] rounded-full border border-border bg-background/80 px-4 py-3.5 text-center text-xs font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-primary hover:text-primary sm:w-auto sm:px-6 sm:py-3.5 sm:text-sm"
                 >
                   Como funciona
                 </a>
