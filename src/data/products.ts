@@ -138,7 +138,6 @@ export const products: Product[] = [
     material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
-    badge: "Mais vendido", //tag do produto 
   },
 
   //pack2
@@ -164,7 +163,6 @@ export const products: Product[] = [
     material: "PLA",
     size: "10 × 8 × 7 cm",
     time: "2 a 3 dias úteis",
-    badge: "Mais vendido",
   },
 
   //pack3
@@ -240,7 +238,7 @@ export const products: Product[] = [
   {
     id: "chav-corinthians",
     name: "Chaveiro Corinthians",
-    category: ["chaveiros", "futebol", "comercio"],
+    category: ["chaveiros", "futebol"],
     price: 10.00,
     image: pack6img1,
     colors: [
