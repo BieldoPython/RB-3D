@@ -12,7 +12,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 // Componente para o Logo do PIX oficial
 const PixLogo = ({ className }: { className?: string }) => (
   <svg
-    fill="#1289e7"
+    fill="#46a48f"
     width="800px"
     height="800px"
     viewBox="-4 -4 24 24"
@@ -135,9 +135,7 @@ function Index() {
           />
           <div className="relative mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
             <div className="mx-auto grid max-w-2xl gap-5 text-center lg:max-w-3xl">
-              <span className="mx-auto w-fit rounded-full border border-primary/30 bg-background/80 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary backdrop-blur-sm sm:px-4 sm:text-xs">
-                Impressão 3D sob encomenda
-              </span>
+
               <h1 className="font-display text-3xl leading-[1.1] text-foreground sm:text-4xl lg:text-5xl">
                 Ideias que saem da tela e viram{" "}
                 <span className="text-gradient">peça na sua mão</span>
@@ -164,7 +162,7 @@ function Index() {
               <dl className="mt-2 grid grid-cols-3 gap-3">
                 {[
                   ["+1.200", "peças impressas"],
-                  ["+ 40", "produtos"],
+                  /*["+ 40", "produtos"],*/
                   ["4,9/5", "avaliação"],
                 ].map(([v, l]) => (
                   <div key={l} className="min-w-0">
@@ -227,27 +225,31 @@ function Index() {
                 {[
                   {
                     icon: CreditCard,
+                    iconColor: "bg-violet-100 text-violet-700",
                     title: "Suportes de Maquininha",
                     desc: "Organização e ergonomia no balcão de vendas, mantendo a maquininha firme e protegida.",
                   },
                   {
                     icon: PixLogo,
+                    iconColor: "bg-teal-100 text-teal-700",
                     title: "Displays de PIX",
                     desc: "Facilite o pagamento via PIX exibindo o QR Code da sua conta de forma clara e profissional.",
                   },
                   {
                     icon: Store,
+                    iconColor: "bg-sky-100 text-sky-700",
                     title: "Organização do Balcão",
                     desc: "Porta-cartões de visita, displays de recados e organizadores personalizados para o seu espaço.",
                   },
                   {
                     icon: RulerDimensionLine,
+                    iconColor: "bg-amber-100 text-amber-700",
                     title: "Peças Sob Medida",
                     desc: "Precisa de algo único com o logo ou nas cores da sua marca? Nós projetamos e imprimimos para você.",
                   }
                 ].map((item, idx) => (
                   <div key={idx} className="surface-card rounded-2xl border border-border bg-card/80 p-5 backdrop-blur-sm transition-colors hover:border-primary/40">
-                    <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${item.title === "Displays de PIX" ? "bg-blue-100 text-blue-600" : "bg-primary/10 text-primary"}`}>
+                    <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${item.iconColor}`}>
                       <item.icon className={`h-6 w-6 ${item.title === "Displays de PIX" ? "-ml-0.5" : ""}`} strokeWidth={item.title === "Displays de PIX" ? 2.5 : 2} />
                     </div>
                     <h3 className="mt-3 text-sm font-semibold text-foreground sm:text-base">{item.title}</h3>

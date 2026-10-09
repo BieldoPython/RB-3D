@@ -1,7 +1,7 @@
 import { n as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { a as RulerDimensionLine, c as Mail, d as CreditCard, f as ArrowRight, i as Store, l as Instagram, n as ZoomIn, o as MessageCircle, r as X, s as Maximize2, t as ZoomOut, u as Facebook } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CjMcSypV.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-B0RaNiRz.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var banner1_default = "/assets/banner1-Do5YobwQ.png";
@@ -90,7 +90,7 @@ var products = [
 		id: "sup-caranguejo",
 		name: "Suporte Caranguejo",
 		category: "suportes",
-		price: 19.99,
+		price: 20,
 		image: img1_default$7,
 		colors: [
 			{
@@ -136,14 +136,13 @@ var products = [
 		description: "Suporte funcional e divertido para manter o celular em vista, com estilo e praticidade em qualquer mesa ou bancada.",
 		material: "PLA",
 		size: "10 × 8 × 7 cm",
-		time: "2 a 3 dias úteis",
-		badge: "Mais vendido"
+		time: "2 a 3 dias úteis"
 	},
 	{
 		id: "sup-gato",
 		name: "Suporte Gato",
 		category: "suportes",
-		price: 19.99,
+		price: 20,
 		image: img1_default$6,
 		colors: [
 			{
@@ -185,15 +184,14 @@ var products = [
 		description: "Acompanha seu dia a dia com um design charmoso, oferecendo suporte firme e um toque de personalidade para o ambiente.",
 		material: "PLA",
 		size: "10 × 8 × 7 cm",
-		time: "2 a 3 dias úteis",
-		badge: "Mais vendido"
+		time: "2 a 3 dias úteis"
 	},
 	{
 		id: "sup-headset",
 		name: "Suporte para Headset",
 		category: "suportes",
-		price: 11.99,
-		image: img1_default$5,
+		price: 10,
+		image: img3_default$3,
 		colors: [
 			{
 				id: "vermelho",
@@ -244,7 +242,7 @@ var products = [
 			"chaveiros",
 			"futebol"
 		],
-		price: 11.99,
+		price: 12,
 		image: img1_default$4,
 		colors: [
 			{
@@ -292,7 +290,7 @@ var products = [
 		id: "chav-flamengo",
 		name: "Chaveiro Flamengo",
 		category: ["chaveiros", "futebol"],
-		price: 9.99,
+		price: 10,
 		image: img1_default$3,
 		colors: [{
 			id: "multicores",
@@ -308,12 +306,8 @@ var products = [
 	{
 		id: "chav-corinthians",
 		name: "Chaveiro Corinthians",
-		category: [
-			"chaveiros",
-			"futebol",
-			"comercio"
-		],
-		price: 9.99,
+		category: ["chaveiros", "futebol"],
+		price: 10,
 		image: img1_default$2,
 		colors: [{
 			id: "multicores",
@@ -330,7 +324,7 @@ var products = [
 		id: "sup-livro-gato",
 		name: "Suporte de livro de gato",
 		category: ["suportes", "decor"],
-		price: 9.99,
+		price: 10,
 		image: img1_default$1,
 		colors: [
 			{
@@ -385,7 +379,7 @@ var products = [
 			"decor",
 			"suportes"
 		],
-		price: 34.9,
+		price: 20,
 		image: img1_default,
 		colors: [
 			{
@@ -1011,7 +1005,7 @@ function SiteFooter() {
 	});
 }
 var PixLogo = ({ className }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("svg", {
-	fill: "#1289e7",
+	fill: "#77B6A8",
 	width: "800px",
 	height: "800px",
 	viewBox: "-4 -4 24 24",
@@ -1167,15 +1161,15 @@ function Index() {
 											children: "Chaveiros personalizados, suportes que organizam seu setup, bonecos articulados e decoração — tudo impresso camada por camada, com acabamento caprichado."
 										}),
 										/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-											className: "grid gap-3 sm:flex sm:flex-wrap sm:justify-center",
+											className: "flex flex-col items-center gap-3 sm:flex-row sm:justify-center",
 											children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 												href: "#catalogo",
-												className: "rounded-full bg-primary px-6 py-3.5 text-center text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5",
+												className: "w-[78%] max-w-[220px] rounded-full bg-primary px-4 py-3.5 text-center text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5 sm:w-auto sm:px-6 sm:py-3.5 sm:text-sm",
 												style: { boxShadow: "var(--shadow-glow)" },
 												children: "Explorar catálogo"
 											}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 												href: "#como-funciona",
-												className: "rounded-full border border-border bg-background/80 px-6 py-3.5 text-center text-sm font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-primary hover:text-primary",
+												className: "w-[78%] max-w-[220px] rounded-full border border-border bg-background/80 px-4 py-3.5 text-center text-xs font-semibold text-foreground backdrop-blur-sm transition-colors hover:border-primary hover:text-primary sm:w-auto sm:px-6 sm:py-3.5 sm:text-sm",
 												children: "Como funciona"
 											})]
 										}),
@@ -1250,21 +1244,25 @@ function Index() {
 										children: [
 											{
 												icon: CreditCard,
+												iconColor: "bg-violet-100 text-violet-700",
 												title: "Suportes de Maquininha",
 												desc: "Organização e ergonomia no balcão de vendas, mantendo a maquininha firme e protegida."
 											},
 											{
 												icon: PixLogo,
+												iconColor: "bg-blue-100 text-blue-600",
 												title: "Displays de PIX",
 												desc: "Facilite o pagamento via PIX exibindo o QR Code da sua conta de forma clara e profissional."
 											},
 											{
 												icon: Store,
+												iconColor: "bg-emerald-100 text-emerald-700",
 												title: "Organização do Balcão",
 												desc: "Porta-cartões de visita, displays de recados e organizadores personalizados para o seu espaço."
 											},
 											{
 												icon: RulerDimensionLine,
+												iconColor: "bg-amber-100 text-amber-700",
 												title: "Peças Sob Medida",
 												desc: "Precisa de algo único com o logo ou nas cores da sua marca? Nós projetamos e imprimimos para você."
 											}
@@ -1272,7 +1270,7 @@ function Index() {
 											className: "surface-card rounded-2xl border border-border bg-card/80 p-5 backdrop-blur-sm transition-colors hover:border-primary/40",
 											children: [
 												/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-													className: `flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${item.title === "Displays de PIX" ? "bg-blue-100 text-blue-600" : "bg-primary/10 text-primary"}`,
+													className: `flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${item.iconColor}`,
 													children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(item.icon, {
 														className: `h-6 w-6 ${item.title === "Displays de PIX" ? "-ml-0.5" : ""}`,
 														strokeWidth: item.title === "Displays de PIX" ? 2.5 : 2
